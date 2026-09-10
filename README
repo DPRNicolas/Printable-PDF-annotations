@@ -1,0 +1,43 @@
+```markdown
+# Printable PDF Annotation Project
+
+## Overview
+The Printable PDF Annotation project provides tools for extracting and exporting annotations from PDF documents. This includes functionality to read annotations from PDF files and save them in JSON format for further processing or analysis.
+
+## Features
+- Extract annotations from PDF files using PyMuPDF (pymupdf)
+- Export annotations to JSON format
+- Combines annotation 
+
+
+## Files
+- `export_annotations.py` - Main script for exporting PDF annotations to JSON
+- `printable_annotations.py` - Placeholder for printable annotation generation
+- `pdf_pipeline.py` - PDF processing pipeline components
+- `import_annotations.py` - Import functionality for annotations
+
+## Requirements
+- Python 3.x
+- PyMuPDF (`pymupdf`) library
+- JSON library (included in standard library)
+
+## Installation
+```bash
+pip install pymupdf
+```
+## Usage
+
+### Using the Pipeline
+The main function of this project is the PDF processing pipeline, which can be used as follows:
+It will produce a pdf version with all the combined annotation + a printable version (and the annotation json file)
+
+**Command Line Interface:**
+```bash
+python pdf_pipeline.py input1.pdf input2.pdf input3.pdf
+```
+
+## Limitations
+- The printable annotation comments are slightly shifted compared to the original
+- THe printable annotation is not vectorised 
+
+```
